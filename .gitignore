@@ -257,6 +257,9 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
+# Logs
+**/applog-20240915.txt
+
 # JetBrains Rider
 .idea/
 *.sln.iml
