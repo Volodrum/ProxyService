@@ -1,3 +1,5 @@
+using ProxyService.Interfaces;
+using ProxyService.Services;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Реєструємо HttpClient та сервіси
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<IUserService, UserService>(); // Реєструємо наш сервіс
 
 // Додаємо HttpClient в DI-контейнер
 builder.Services.AddHttpClient();
