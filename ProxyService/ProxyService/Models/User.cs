@@ -1,8 +1,9 @@
-﻿using System.Text.Json.Serialization;
+﻿using ProxyService.Interfaces;
+using System.Text.Json.Serialization;
 
 namespace MicroServices1.Models
 {
-    public class User
+    public class User : IUser
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }

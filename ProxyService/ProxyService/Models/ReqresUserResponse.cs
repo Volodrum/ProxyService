@@ -1,6 +1,8 @@
-﻿namespace MicroServices1.Models
+﻿using ProxyService.Interfaces;
+
+namespace MicroServices1.Models
 {
-    public class ReqresUserResponse
+    public class ReqresUserResponse : IReqresUserResponse
     {
         public User Data { get; set; }
     }
