@@ -20,7 +20,14 @@ namespace MicroServices1.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUser(int id)
         {
+            Log.Information("Received request for user with ID {Id}", id);
             var user = await _userService.GetUserById(id);
+            if (user == null)
+            {
+                Log.Warning("User with ID {Id} not found", id);
+                return NotFound($"User with id {id} not found.");
+            }
+            Log.Information("Returning user with ID {Id}", id);
 
             return Ok(user);
         }
