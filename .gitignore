@@ -258,9 +258,7 @@ paket-files/
 .fake/
 
 # Logs
-**/*.Logs/applog-20240915.txt
-**/applog-20240915.txt
-**/Logs/applog-20240915.txt
+ProxyService/ProxyService/ProxyService/Logs/
 
 # JetBrains Rider
 .idea/
