@@ -258,8 +258,9 @@ paket-files/
 .fake/
 
 # Logs
-applog-20240915.txt
+**/*.Logs/applog-20240915.txt
 **/applog-20240915.txt
+**/Logs/applog-20240915.txt
 
 # JetBrains Rider
 .idea/
