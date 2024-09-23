@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProxyService.Interfaces;
 using Serilog;
+using Microsoft.AspNetCore.Authorization;
 using System.Text.Json;
 
 namespace MicroServices1.Controllers
@@ -18,6 +19,7 @@ namespace MicroServices1.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetUser(int id)
         {
             Log.Information("Received request for user with ID {Id}", id);

@@ -1,14 +1,18 @@
 using ProxyService.Interfaces;
 using ProxyService.Services;
 using Serilog;
+using System.IO;
 using IdentityServer4;
 using IdentityServer4.Models;
 using ProxyService.Models;
 using ProxyService.Data;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using IdentityServer4.Validation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -72,6 +76,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAuthentication(config =>
+{
+    config.DefaultAuthenticateScheme =
+        JwtBearerDefaults.AuthenticationScheme;
+    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer("Bearer", options =>
+    {
+        options.Authority = "https://localhost:44355/";
+        options.Audience = "ProxyWebApi";
+        options.RequireHttpsMetadata = false;
+    });
+
+
 // –еЇструЇмо HttpClient та серв≥си
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<IUserService, UserService>(); // –еЇструЇмо наш серв≥с
@@ -93,12 +111,22 @@ app.UseStaticFiles();
 //Adding identity server
 app.UseIdentityServer();
 
+var env = app.Environment;
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(env.ContentRootPath, "Styles")),
+    RequestPath = "/styles"
+});
+
 //Add support to logging request with SERILOG
 app.UseSerilogRequestLogging();
 
 app.UseRouting();
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
