@@ -3922,3 +3922,66 @@ System.InvalidOperationException: The model item passed into the ViewDataDiction
 2024-09-23 22:35:44.325 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
 2024-09-23 22:35:44.332 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 7.1446ms
 2024-09-23 22:35:44.345 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.4757ms
+2024-09-23 22:42:42.418 +03:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-09-23 22:42:42.441 +03:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-09-23 22:42:42.449 +03:00 [INF] Using the default authentication scheme Bearer for IdentityServer
+2024-09-23 22:42:42.450 +03:00 [INF] Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-09-23 22:42:42.451 +03:00 [DBG] Using Bearer as default ASP.NET Core scheme for authentication
+2024-09-23 22:42:42.452 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2024-09-23 22:42:42.452 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2024-09-23 22:42:42.453 +03:00 [DBG] Using Bearer as default ASP.NET Core scheme for challenge
+2024-09-23 22:42:42.454 +03:00 [DBG] Using Bearer as default ASP.NET Core scheme for forbid
+2024-09-23 22:42:42.489 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Auth/Login.cshtml'.
+2024-09-23 22:42:42.490 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Auth/Register.cshtml'.
+2024-09-23 22:42:42.491 +03:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2024-09-23 22:42:42.495 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-23 22:42:42.527 +03:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-23 22:42:42.567 +03:00 [DBG] Hosting starting
+2024-09-23 22:42:42.570 +03:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-eefb4eca-94f9-44a4-b3a1-90f16cdabca1.xml'.
+2024-09-23 22:42:42.575 +03:00 [DBG] Found key {eefb4eca-94f9-44a4-b3a1-90f16cdabca1}.
+2024-09-23 22:42:42.580 +03:00 [DBG] Considering key {eefb4eca-94f9-44a4-b3a1-90f16cdabca1} with expiration date 2024-12-14 08:46:57Z as default key.
+2024-09-23 22:42:42.582 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-23 22:42:42.583 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-09-23 22:42:42.585 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-23 22:42:42.587 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-23 22:42:42.588 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-23 22:42:42.590 +03:00 [DBG] Using key {eefb4eca-94f9-44a4-b3a1-90f16cdabca1} as the default key.
+2024-09-23 22:42:42.591 +03:00 [DBG] Key ring with default key {eefb4eca-94f9-44a4-b3a1-90f16cdabca1} was loaded during application startup.
+2024-09-23 22:42:42.620 +03:00 [WRN] The WebRootPath was not found: C:\Users\Admin\Documents\GitHub\ProxyService\ProxyService\ProxyService\wwwroot. Static files may be unavailable.
+2024-09-23 22:42:42.687 +03:00 [INF] Now listening on: https://localhost:7263
+2024-09-23 22:42:42.688 +03:00 [INF] Now listening on: http://localhost:5154
+2024-09-23 22:42:42.689 +03:00 [DBG] Loaded hosting startup assembly ProxyService
+2024-09-23 22:42:42.690 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-09-23 22:42:42.690 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-23 22:42:42.691 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-23 22:42:42.715 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 22:42:42.715 +03:00 [INF] Hosting environment: Development
+2024-09-23 22:42:42.716 +03:00 [INF] Content root path: C:\Users\Admin\Documents\GitHub\ProxyService\ProxyService\ProxyService
+2024-09-23 22:42:42.716 +03:00 [DBG] Hosting started
+2024-09-23 22:42:42.879 +03:00 [DBG] Connection id "0HN6S0VI0SGEK" received FIN.
+2024-09-23 22:42:42.882 +03:00 [DBG] Connection id "0HN6S0VI0SGEK" accepted.
+2024-09-23 22:42:42.883 +03:00 [DBG] Connection id "0HN6S0VI0SGEK" started.
+2024-09-23 22:42:42.894 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-23 22:42:42.898 +03:00 [DBG] Connection id "0HN6S0VI0SGEK" stopped.
+2024-09-23 22:42:42.900 +03:00 [DBG] Connection id "0HN6S0VI0SGEK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-23 22:42:43.071 +03:00 [DBG] Connection id "0HN6S0VI0SGEL" accepted.
+2024-09-23 22:42:43.072 +03:00 [DBG] Connection id "0HN6S0VI0SGEL" started.
+2024-09-23 22:42:43.097 +03:00 [DBG] Connection 0HN6S0VI0SGEL established using the following protocol: "Tls13"
+2024-09-23 22:42:43.140 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2024-09-23 22:42:43.210 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-09-23 22:42:43.235 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-23 22:42:43.236 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-23 22:42:43.244 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-23 22:42:43.245 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-23 22:42:43.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 200 null text/html;charset=utf-8 109.3125ms
+2024-09-23 22:42:43.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-23 22:42:43.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7263/_vs/browserLink - null null
+2024-09-23 22:42:43.288 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 12.139ms
+2024-09-23 22:42:43.314 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7263/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.2674ms
+2024-09-23 22:42:43.420 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - null null
+2024-09-23 22:42:43.458 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.7831ms
